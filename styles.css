@@ -1,0 +1,121 @@
+body {
+  background: #ddd;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+	border-bottom: 2px solid orange;
+}
+
+ol {
+	padding-left: 0;
+}
+
+.crumb {
+	margin-right: 2em;
+	display: inline;
+}
+
+a {
+	color: orange;
+}
+
+a:visited {
+	color: crimson;
+}
+
+
+input {
+	display: block;
+}
+
+img {
+	max-width: 300px;
+}
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.hexagon {
+		height: 80px;
+		width: 50px;
+		background: #376996;
+		position:relative;
+		left:50px;
+		box-sizing: border-box;
+}
+
+.hexagon::before, .hexagon::after {
+		content:"";
+		position: absolute;
+		height: 0;
+		width: 0; 
+		top:0;
+		/* half height */
+		border-top: 40px solid transparent;
+		border-bottom: 40px solid transparent; 
+}
+
+.hexagon::before {
+		left:-30px;
+		border-right:30px solid #376996; 
+}
+
+.hexagon::after {
+		right:-30px;
+		border-left:30px solid #376996; 
+}
+	  
+
+
+button {
+	display: block;
+	margin-bottom: 10px;
+	border: 1px black;
+	font-size: medium;
+	padding: 10%;
+}
+
+.colorBtn {
+	background-color: #011638;
+	color: white;
+}
+
+.placeBtn {
+	background-color: #141414;
+	color: white;
+}
+
+.placeBtn:hover {
+	background-image: url('https://images.unsplash.com/photo-1552594364-1489ef942d3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	background-size: cover;
+	color: white;
+	width: 70%;
+	height: 200px;
+	font-size: large;
+}
+
+.ritualBtn {
+	background-color: #898952;
+	color: #EEF0F2;
+}
+
+/* main {
+	border: 1px solid black
+} */
+
+
+
+.img-row {
+	display: flex;
+	gap: 5px;
+	width: 100px;
+	height: 200px;
+	object-fit: cover;
+}
